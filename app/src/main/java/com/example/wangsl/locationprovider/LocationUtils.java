@@ -79,7 +79,7 @@ public class LocationUtils {
 
     private void setLocation(Location location) {
         this.location = location;
-        String address = "纬度：" + location.getLatitude() + "经度：" + location.getLongitude();
+        String address = "纬度：----" + location.getLatitude() + "经度：" + location.getLongitude();
         Log.d( TAG, address );
     }
 
@@ -142,5 +142,8 @@ public class LocationUtils {
             setLocation( location );
         }
     };
+
+
+
 
 }
